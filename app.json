@@ -1,20 +1,21 @@
 {
   "expo": {
-    "name": "bolt-expo-nativewind",
-    "slug": "bolt-expo-nativewind",
+    "name": "FitPro",
+    "slug": "fitpro-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "platforms": ["ios", "android", "web"],
     "ios": {
       "supportsTablet": true
     },
     "web": {
+      "favicon": "./assets/favicon.png",
       "bundler": "metro",
-      "output": "single",
-      "favicon": "./assets/images/favicon.png"
+      "output": "static"
     },
     "plugins": ["expo-router", "expo-font", "expo-web-browser"],
     "experiments": {
