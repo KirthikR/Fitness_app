@@ -13,9 +13,7 @@
       "supportsTablet": true
     },
     "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro",
-      "output": "static"
+      "bundler": "metro"
     },
     "plugins": ["expo-router", "expo-font", "expo-web-browser"],
     "experiments": {

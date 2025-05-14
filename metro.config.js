@@ -1,9 +1,9 @@
-const { getDefaultConfig } = require('expo/metro-config');
+const { getDefaultConfig } = require('@expo/metro-config');
 const path = require('path');
 
 const config = getDefaultConfig(__dirname);
 
-// Add this to enable path aliases
+// Add support for importing from root using @/
 config.resolver.extraNodeModules = {
   '@': path.resolve(__dirname),
 };

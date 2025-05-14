@@ -10,6 +10,7 @@ import {
   Poppins_700Bold,
 } from '@expo-google-fonts/poppins';
 import { SplashScreen } from 'expo-router';
+import { Platform } from 'react-native';
 
 // Prevent splash screen from auto-hiding
 SplashScreen.preventAutoHideAsync();
@@ -31,6 +32,18 @@ export default function RootLayout() {
       SplashScreen.hideAsync();
     }
   }, [fontsLoaded, fontError]);
+
+  useEffect(() => {
+    if (Platform.OS === 'web') {
+      // This helps with handling direct URL navigation on web
+      document.addEventListener('DOMContentLoaded', () => {
+        // Force router to initialize properly
+        setTimeout(() => {
+          window.dispatchEvent(new Event('popstate'));
+        }, 100);
+      });
+    }
+  }, []);
 
   // Return null to keep splash screen visible while fonts load
   if (!fontsLoaded && !fontError) {
