@@ -3,7 +3,7 @@
 
 The **FitPro App** is designed to combine modern mobile/web technologies with intelligent AI features to provide users with a **seamless, personalized fitness experience**. This section breaks down the functional and technical workflow of each core feature.
 
- Live Demo: [kirthikfitnesspro.netlify.app](https://kirthikfitnesspro.netlify.app/)
+## Live Demo: [kirthikfitnesspro.netlify.app](https://kirthikfitnesspro.netlify.app/)
 
 ## 1. 👤 **User Profile Management**
 
